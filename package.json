@@ -1,0 +1,33 @@
+{
+  "name": "club-poker",
+  "productName": "Club Poker",
+  "version": "0.1.0",
+  "description": "Club Poker",
+  "main": "main.js",
+  "build": {
+    "appId": "com.clubpoker.app",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "scripts": {
+    "start": "electron ./",
+    "rebuild": "./node_modules/.bin/electron-rebuild.cmd",
+    "dist": "electron-builder ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chris Lynch",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-rebuild": "^1.10.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jwt-decode": "^2.2.0",
+    "keytar": "^5.4.0",
+    "request": "^2.88.2"
+  }
+}
