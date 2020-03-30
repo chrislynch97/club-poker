@@ -9,7 +9,7 @@ function createAuthWindow() {
 
   win = new BrowserWindow({
     width: 500,
-    height: 900,
+    height: 600,
     resizable: false,
     maximizable: false,
     fullscreenable: false,
