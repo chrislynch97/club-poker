@@ -23,7 +23,3 @@ div.profile img {
   border-radius: 50%;
   align-self: center;
 }
-
-div#message {
-  display: none;
-}

@@ -27,7 +27,7 @@ function getProfile() {
 function getAuthenticationURL() {
   return 'https://' + auth0Domain + '/authorize?' +
     'audience=' + apiIdentifier + '&' +
-    'scope=openid profile offline_access&' +
+    'scope=openid profile email username offline_access&' +
     'response_type=code&' +
     'client_id=' + clientId + '&' +
     'redirect_uri=' + redirectUri;
@@ -48,7 +48,7 @@ function refreshTokens() {
         client_id: clientId,
         refresh_token: refreshToken,
       },
-      json: true,
+      json: true
     };
 
     request(refreshOptions, async function (error, response, body) {

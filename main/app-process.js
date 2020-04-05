@@ -1,10 +1,15 @@
 const {BrowserWindow} = require('electron');
 
 function createAppWindow() {
-  let win = new BrowserWindow({
+
+  win = new BrowserWindow({
+    //icon: '',
+    // frame: false,
+    autoHideMenuBar: true,
     webPreferences: {
+      // devTools: false,
       nodeIntegration: true
-    },
+    }
   });
 
   win.maximize();
